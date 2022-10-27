@@ -10,7 +10,7 @@ Site para apresentação de outros projetos (portfolio)
 
 ### ✈️ Acesse o site:
 
--[GMDeveloper](https://gmdeveloper.ga)
+- [GMDeveloper](https://gmdeveloper.ga)
 
 Hospedado no GitHub Pages.
 
