@@ -1,5 +1,8 @@
 .background {
     background-image: url(../imagens/bg-programin.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .corpo {
