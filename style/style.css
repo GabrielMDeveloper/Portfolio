@@ -15,22 +15,42 @@
 @keyframes fade-in-left {0%{-webkit-transform: translateX(-50px);transform: translateX(-50px);opacity:0}100%{-webkit-transform: translateX(0);transform: translateX(0);opacity:1}}
 
 .icones1 {
-    width: 20%;
+    width: 25%;
 }
 
 .icones2 {
-    width: 30%;
+    width: 35%;
 }
 
 .zoom {
-    transition: transform .4s;
+    transition: transform .5s;
   }
+
 .zoom:hover {
--ms-transform: scale(1.1); /* IE 9 */
--webkit-transform: scale(1.1); /* Safari 3-8 */
-transform: scale(1.1); 
+-ms-transform: scale(1.07);
+-webkit-transform: scale(1.07);
+transform: scale(1.07); 
+z-index:7;
 }
 
 .card{
-    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.bg-degrade{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-size: 500% 100%;
+    animation: back_animation 5s infinite alternate;
+}
+@keyframes back_animation{
+    0%{ 
+        background-position-x: 0%;
+    }100%{
+        background-position-x: 100%;
+    }
 }
