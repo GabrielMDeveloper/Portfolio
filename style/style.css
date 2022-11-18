@@ -40,10 +40,17 @@ p2{
     font-size: 120%;
 }
 
+.sobre{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    margin-bottom: 1000000px;
+}
+
 .bg-degrade{
-    background-image: linear-gradient(to left, rgb(18, 1, 255), orangered, rgb(0, 208, 255), rgb(255, 0, 230),rgb(38, 255, 0));
-    background-size: 500% 100%;
-    animation: back_animation 8s infinite alternate;
+    background-image: linear-gradient(to left, blue, red,rgb(180, 180, 4));
+    background-size: 500% 200%;
+    animation: back_animation 10s infinite alternate;
 }
 @keyframes back_animation{
     0%{ 
@@ -51,4 +58,4 @@ p2{
     }100%{
         background-position-x: 100%;
     }
-}
+} /*gb(0, 208, 255), rgb(38, 255, 0) 
