@@ -36,16 +36,14 @@ z-index:7;
 .card{
     margin-top: 15px;
 }
+p2{
+    font-size: 120%;
+}
 
 .bg-degrade{
-    width: 100%;
-    padding: 300px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to left, blue, orangered, yellow);
+    background-image: linear-gradient(to left, rgb(18, 1, 255), orangered, rgb(0, 208, 255), rgb(255, 0, 230),rgb(38, 255, 0));
     background-size: 500% 100%;
-    animation: back_animation 5s infinite alternate;
+    animation: back_animation 8s infinite alternate;
 }
 @keyframes back_animation{
     0%{ 
