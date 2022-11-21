@@ -36,6 +36,8 @@ z-index:7;
 .card{
     margin-top: 15px;
     z-index: 100;
+    width: 18em; 
+    height: 20em;
 }
 p2{
     font-size: 120%;
