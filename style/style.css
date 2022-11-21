@@ -45,13 +45,12 @@ p2{
     position: absolute;
     left: 20px;
     top: 10px;
-    margin-bottom: 1000000px;
 }
 
 .bg-degrade{
-    background-image: linear-gradient(to left, blue, red,rgb(180, 180, 4));
+    background-image: linear-gradient(to left, rgb(1, 1, 203), rgb(167, 1, 1),rgb(4, 150, 16));
     background-size: 500% 200%;
-    animation: back_animation 10s infinite alternate;
+    animation: back_animation 8s infinite alternate;
 }
 @keyframes back_animation{
     0%{ 
@@ -76,7 +75,7 @@ p2{
     overflow: hidden;
     border-radius: 20px;
     position: relative;
-    transition: transform .5s;
+    
 }
 .box:hover::before{
     content: '';
