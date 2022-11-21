@@ -35,6 +35,7 @@ z-index:7;
 
 .card{
     margin-top: 15px;
+    z-index: 100;
 }
 p2{
     font-size: 120%;
@@ -58,4 +59,46 @@ p2{
     }100%{
         background-position-x: 100%;
     }
-} /*gb(0, 208, 255), rgb(38, 255, 0) 
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    transition: transform .5s;
+}
+.box:hover::before{
+    content: '';
+    width: 150px;
+    height:140%;
+    background: linear-gradient(yellow, red );
+    animation: bordas-animadas 5s linear infinite;
+    position: absolute;
+}
+
+@keyframes bordas-animadas {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #333 ;
+    border-radius: 20px;
+}
