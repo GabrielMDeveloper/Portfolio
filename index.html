@@ -12,19 +12,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <!-- CSS próprio -->
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body class="background fade-in-left">
+  <!-- ### Barra de Navegação ### -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-degrade ">
+    <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -39,16 +37,13 @@
               <a class="nav-link text-light" href="#about">Sobre mim</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#habilidades">habilidades</a>
+              <a class="nav-link text-light" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#contacts">Contato</a>
+              <a class="nav-link text-light" href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Contatos</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Projetos:
-              </a>
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projetos:</a>
               <ul class="dropdown-menu bg-dark">
                 <li><a class="dropdown-item text-light link-primary" href="#">Calculadora</a></li>
                 <li><a class="dropdown-item text-light link-primary" href="https://gabrielmdeveloper.github.io/Mata_Mosquito/">Mata Mosquito</a></li>
@@ -59,13 +54,26 @@
         </div>
       </div>
     </nav>
-  </header><br><br>
+  </header>
+  <!-- ### FIM Barra de Navegação ### -->
 
-  <!-- Sobre Mim -->
-  <section id="about" class="bg-dark about text-light d-flex flex-column justify-content-center rounded-5">
+  <!-- ### Contatos ### -->
+<div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title text-warning" id="offcanvasWithBothOptionsLabel">Contatos</h5>
+    <button type="button" class="btn btn-dark" data-bs-dismiss="offcanvas" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 0, 0); --darkreader-inline-fill:#ff1a1a;" data-darkreader-inline-fill=""><path d="M9.172 16.242 12 13.414l2.828 2.828 1.414-1.414L13.414 12l2.828-2.828-1.414-1.414L12 10.586 9.172 7.758 7.758 9.172 10.586 12l-2.828 2.828z"></path><path d="M12 22c5.514 0 10-4.486 10-10S17.514 2 12 2 2 6.486 2 12s4.486 10 10 10zm0-18c4.411 0 8 3.589 8 8s-3.589 8-8 8-8-3.589-8-8 3.589-8 8-8z"></path></svg></button>
+  </div>
+  <div class="offcanvas-body">
+  </div>
+</div>
+  <!-- ### FIM Contatos ### -->
+
+
+  <!-- ### Sobre Mim ###-->
+  <section id="about" class="bg-darkness about text-light d-flex flex-column justify-content-center rounded-5">
     <div class="about">
       <article>
-        <h2>Quem sou eu?</h2>
+        <h2 class="text-center">Quem sou eu?</h2><br>
         <p2>Olá, Me chamo Gabriel, tenho 16 anos, moro em Goiânia (GO) e tenho um sonho, me tornar um programador profissional! <br>
           Mesmo com minha pouca idade busco conhecer um pouco sobre cada canto deste vasto mundo tecnológico.
         </p2>
@@ -79,12 +87,12 @@
       <article>
         <h3>Qual é a minha meta?</h3>
         <p2>Quero exercer minha função com excelência e profissionalismo.</p2>
-      </article><br>
+      </article>
     </div>
-  </section> <br><br>
-  <!-- FIM Sobre mim -->
+  </section> br><br>
+  <!-- ### FIM Sobre Mim ### -->
 
-  <!-- Habilidades -->
+  <!-- ### Habilidades ### -->
   <section id="habilidades" class="habilidades">
     <!-- Titulo -->
     <div class="d-flex justify-content-center">
@@ -94,7 +102,7 @@
     <div class="d-flex flex-wrap flex-row justify-content-around">
 
       <!-- HTML -->
-      <div class="zoom">
+      <article class="zoom">
         <div class="box">
           <div class="card align-items-center">
             <img class="icones1" src="imagens/html_logo.svg" alt="Logo do HTML">
@@ -105,11 +113,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- FIM HTML -->
 
       <!-- CSS -->
-      <div class="zoom">
+      <article class="zoom">
         <div class="box">
           <div class="card align-items-center">
             <img class="icones1" src="imagens/css_logo.svg" alt="Logo do CSS">
@@ -121,11 +129,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- FIM CSS -->
 
       <!-- Java Script -->
-      <div class="zoom">
+      <article class="zoom">
         <div class="box">
           <div class="card align-items-center">
             <img class="icones1" src="imagens/js_logo.svg" alt="Logo do Java Script">
@@ -136,11 +144,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- FIM Java Script -->
 
       <!-- PHP -->
-      <div class="zoom">
+      <article class="zoom">
         <div class="box">
           <div class="card align-items-center">
             <img class="icones2" src="imagens/php.png" alt="Logo do PHP">
@@ -151,11 +159,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- FIM PHP -->
 
       <!-- Mysql -->
-      <div class="zoom">
+      <article class="zoom">
         <div class="box">
           <div class="card align-items-center">
             <img class="icones2" src="imagens/mysql.jfif" alt="Logo do MYSQL">
@@ -166,11 +174,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- FIM MYSQL -->
 
       <!-- Bootstrap -->
-      <div class="zoom">
+      <article class="zoom">
         <div class="box">
           <div class="card align-items-center">
             <img class="icones2" src="imagens/Bootstrap.png" alt="Logo do Bootstrap">
@@ -182,11 +190,38 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
       <!-- FIM Bootstrap -->
 
     </div> <!-- FIM Cards -->
-  </section> <!-- FIM Habilidades -->
+  </section> 
+  <!-- ### FIM Habilidades ### -->
+
+  <!-- ### Projetos ### -->
+  <section class="projetos bg-dark">
+    <h2 class="text-center text-light">MEUS PROJETOS</h2>
+
+    <!-- Mata Mosquito -->
+    <article >
+      <h3 class="text-light">TESTE</h3>
+
+       <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class=" text-light accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Sobre:
+      </button> <br>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+      <div class="accordion-body">
+        <p class="text-light">Um jogo desenvolvido com HTML, CSS e Java Script. com o intuito de  </p>
+      </div>
+    </div>
+  </div>
+
+    </article>
+
+  </section>
+  <!-- ### FIM Projetos ### -->
 </body>
 
 </html>

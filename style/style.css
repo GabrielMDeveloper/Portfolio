@@ -11,15 +11,15 @@
 /* FIM do Efeito de inicio */
 
 /* Backgrounds */
-.background {
+.background{
     background-image: url(../imagens/bg-programin.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-/* Background Degradê */
-.bg-degrade{
-    background-image: linear-gradient(to left, rgb(1, 1, 203), rgb(167, 1, 1), rgb(4, 150, 16));
+/* Background Darkness */
+.bg-darkness{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(66, 0, 0, 0.5), rgba(1, 7, 57, 0.5));
     background-size: 500% 200%;
     animation: back_animation 8s infinite alternate;
 }
@@ -30,18 +30,23 @@
         background-position-x: 100%;
     }
 }
-/* FIM Background Degradê */
+/* FIM Background Darkness */
 /* FIM dos Backgrounds */
 
 
 /* Barra de Navegação */
 .navbar{
     width: 100%;
-    position: fixed;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
 /* FIM Barra de Navegação */
+
+/* ### Contatos ### */
+
+
+
+/* ### FIM Contatos ### */
 
 
 /* Sobre mim */
@@ -100,7 +105,7 @@ z-index:7;
     content: '';
     width: 150px;
     height:140%;
-    background: linear-gradient(yellow, red );
+    background: linear-gradient(rgb(0, 145, 241), rgb(219, 0, 0) );
     animation: bordas-animadas 5s linear infinite;
     position: absolute;
 }
@@ -120,3 +125,9 @@ z-index:7;
 }
 /* FIM dos Efeito de Hover Zoom dos Cards */
 /* FIM Habilidades */
+
+/* ### Projetos ### */
+.projetos{
+    margin-bottom: 500px;
+}
+/* ### FIM Projetos ### */
