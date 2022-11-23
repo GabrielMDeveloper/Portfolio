@@ -10,7 +10,7 @@
 @keyframes fade-in-left {0%{-webkit-transform: translateX(-50px);transform: translateX(-50px);opacity:0}100%{-webkit-transform: translateX(0);transform: translateX(0);opacity:1}}
 /* FIM do Efeito de inicio */
 
-/* Backgrounds */
+/* ### Backgrounds ### */
 .background{
     background-image: url(../imagens/bg-programin.jpg);
     background-repeat: no-repeat;
@@ -31,28 +31,28 @@
     }
 }
 /* FIM Background Darkness */
-/* FIM dos Backgrounds */
+/* ### FIM dos Backgrounds ### */
 
 
-/* Barra de Navegação */
+/* ### Barra de Navegação ### */
 .navbar{
     width: 100%;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
-/* FIM Barra de Navegação */
+/* ### FIM Barra de Navegação ### */
 
-/* Sobre mim */
+/* ### Sobre mim ### */
 .about{
     margin: 35px;
 }
 p2{
     font-size: 160%;
 }
-/* FIM Sobre Mim */
+/* ### FIM Sobre Mim ### */
 
 
-/* Habilidades */
+/* ### Habilidades ### */
 .habilidades{
     margin-bottom: 8%;
 }
@@ -117,7 +117,7 @@ z-index:7;
     border-radius: 20px;
 }
 /* FIM dos Efeito de Hover Zoom dos Cards */
-/* FIM Habilidades */
+/* ### FIM Habilidades ### */
 
 /* ### Projetos ### */
 .projetos{
